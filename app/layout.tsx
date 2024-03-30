@@ -16,7 +16,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider>
+    <ClerkProvider
+      appearance={{
+        layout: {
+          logoImageUrl: "/images/instantwave.png",
+          socialButtonsVariant: "iconButton",
+        },
+        variables: {
+          colorText: "#fff",
+          colorPrimary: "#0e78f9",
+          colorBackground: "#1c1f2e",
+          colorInputBackground: "#252a41",
+          colorInputText: "#fff",
+        },
+      }}
+    >
       <html lang="en">
         <head>
           <link rel="icon" href="/images/instantwave.png" />

@@ -1,7 +1,7 @@
 import { authMiddleware } from "@clerk/nextjs";
 
 export default authMiddleware({
-  redirectTo: "/signup",
+  authPage: "/signup",
 });
 
 export const config = {

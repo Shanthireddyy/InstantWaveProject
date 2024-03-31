@@ -10,7 +10,10 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Instant Wave",
-  description: "Your Seamless communication hub",
+  description: "Your Seamless Communication Hub",
+  icons: {
+    icon: "/images/instantwave.png",
+  },
 };
 
 export default function RootLayout({
@@ -35,9 +38,6 @@ export default function RootLayout({
       }}
     >
       <html lang="en">
-        <head>
-          <link rel="icon" href="/images/instantwave.png" />
-        </head>
         <body className={`${inter.className} bg-dark-2`}>
           {children}
           <Toaster />
